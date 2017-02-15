@@ -76,4 +76,11 @@ refers to the second meaning
       - `argc` contains the total number of command-line arguments
       - `argv` is an array of strings pointing to individual arguments
           `argv[0]` is the name of the program itself
-      
+    #### 2.7 _Processes_
+    - **A process is an instance of a currently-executing program.**
+      - At runtime:
+        - the kernel **loads the code of the program into virtual memory**,
+        -  **allocates space for program variables**,
+        -  **and sets up kernel bookkeeping data structures to record execution-specific information (PID, term status, user IDs and group IDs)**
+     - The kernel decides how the various resources of the computer are allocated to a process.
+       - for limited resources, such as **memory**, the kernel adjusts the initial allocation of system resources over the lifetime of the process, in response to the **demand of the process** and **the overall system demand for the resources in question**.
