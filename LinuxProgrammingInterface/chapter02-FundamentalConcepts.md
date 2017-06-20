@@ -84,3 +84,9 @@ refers to the second meaning
         -  **and sets up kernel bookkeeping data structures to record execution-specific information (PID, term status, user IDs and group IDs)**
      - The kernel decides how the various resources of the computer are allocated to a process.
        - for limited resources, such as **memory**, the kernel adjusts the initial allocation of system resources over the lifetime of the process, in response to the **demand of the process** and **the overall system demand for the resources in question**.
+     * Process memory layout **(4 segments)**:
+       1. **Text** - the instructions of the program
+       2. **Data** - the static variables used by the program
+       3. **Heap** - an area from which programs can **dynamically allocate extra memory**
+       4. **Stack** - a piece of memory that grows and shrinks as **functions are called and returned** and that is used to allocate storage for local variables and function-call linkage information.
+      
